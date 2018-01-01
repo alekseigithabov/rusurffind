@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Menu_FindSelection" xml:space="preserve">
+    <value>Find selected text</value>
+  </data>
+  <data name="ToolTip_Word" xml:space="preserve">
+    <value>Match whole word</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Img_asterisk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\asterisk.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolTip_FindExcl" xml:space="preserve">
+    <value>Extract non-matched lines from the result lines on the current tab (Ctrl + Enter)</value>
+  </data>
+  <data name="Label_Content" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="Menu_ExternalEditor" xml:space="preserve">
+    <value>Open with external editor</value>
+  </data>
+  <data name="Icon_Find128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Find128.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolTip_Text" xml:space="preserve">
+    <value>The keyword text to find</value>
+  </data>
+  <data name="Img_plus_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus-white.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Filter_TextFile" xml:space="preserve">
+    <value>Text files (*.txt)|*.txt|All files (*.*)|*.*</value>
+  </data>
+  <data name="Menu_CopySelection" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="Label_CancelFind" xml:space="preserve">
+    <value>'Esc' to cancel</value>
+  </data>
+  <data name="Img_spell_check" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\spell-check.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Label_Line" xml:space="preserve">
+    <value>Line</value>
+  </data>
+  <data name="Img_cross_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cross-button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mesg_NoFilesMatched" xml:space="preserve">
+    <value>No files matched FILES / EXCLUDE pattern</value>
+  </data>
+  <data name="ToolTip_Lines" xml:space="preserve">
+    <value>Total numbers of matched lines / searched lines</value>
+  </data>
+  <data name="Menu_CloseAllTabsButThis" xml:space="preserve">
+    <value>Close all tabs but this</value>
+  </data>
+  <data name="Menu_ChooseFont" xml:space="preserve">
+    <value>Font</value>
+  </data>
+  <data name="Img_processor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\processor.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolTip_Case" xml:space="preserve">
+    <value>Match case</value>
+  </data>
+  <data name="Mesg_FileOpenFailed" xml:space="preserve">
+    <value>(Failed to open)</value>
+  </data>
+  <data name="Img_document_search_result" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\document-search-result.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Img_edit_rule" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit-rule.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Img_clipboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clipboard.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Menu_ShowProperty" xml:space="preserve">
+    <value>Property</value>
+  </data>
+  <data name="ToolTip_Bytes" xml:space="preserve">
+    <value>Number of searched bytes</value>
+  </data>
+  <data name="Img_locale" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\locale.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Img_folders_stack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\folders-stack.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolTip_Regx" xml:space="preserve">
+    <value>Use regular expression</value>
+  </data>
+  <data name="Label_WrapSample" xml:space="preserve">
+    <value>Sample text
+
+When "Lines" option is enabled, a long single line of wordy and lengthy words will be wrapped into multiple lines. When "Word" options is also enabled, the wrapping will happen at word boundaries only.
+
+ 1 space
+  2 spaces
+   3 spaces
+    4 spaces
+	1 tab character
+		2 tab characters
+        8 spaces
+         9 spaces
+          10 spaces
+           11 spaces
+            12 spaces
+			3 tab characters</value>
+  </data>
+  <data name="Img_wrench_screwdriver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrench-screwdriver.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Img_minus_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minus-white.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Img_Find" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Find.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Label_Bytes" xml:space="preserve">
+    <value>Bytes</value>
+  </data>
+  <data name="ToolTip_Options" xml:space="preserve">
+    <value>Search options used</value>
+  </data>
+  <data name="Img_system_monitor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\system-monitor.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mesg_FileModified" xml:space="preserve">
+    <value>(File was modified)</value>
+  </data>
+  <data name="Icon_find_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\find-white.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolTip_Elapsed" xml:space="preserve">
+    <value>Elapsed time to find</value>
+  </data>
+  <data name="Img_folder__arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\folder--arrow.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolTip_Memory" xml:space="preserve">
+    <value>GC memory size : click here to invoke garbage collection</value>
+  </data>
+  <data name="Img_edit_lowercase" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit-lowercase.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Img_script_attribute_r" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\script-attribute-r.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Label_Files" xml:space="preserve">
+    <value>Files</value>
+  </data>
+  <data name="ToolTip_Chars" xml:space="preserve">
+    <value>Number of searched chars</value>
+  </data>
+  <data name="Menu_Export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="Menu_CloseTab" xml:space="preserve">
+    <value>Close this tab</value>
+  </data>
+  <data name="Menu_FindSelectionInFound" xml:space="preserve">
+    <value>Find selected text in found files</value>
+  </data>
+  <data name="Img_edit_shadow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit-shadow.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Img_split_horz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\layout-split.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Img_clock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clock.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Img_split_vert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\layout-split-vertical.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Img_magnifier" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\magnifier.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Menu_IncludeSelection" xml:space="preserve">
+    <value>Extract result lines matching selected text</value>
+  </data>
+  <data name="ToolTip_Encoding" xml:space="preserve">
+    <value>Specify the file encoding used to read files</value>
+  </data>
+  <data name="Menu_CopyPath" xml:space="preserve">
+    <value>Copy file path to clipboard</value>
+  </data>
+  <data name="FileEncoding_AutoDetect" xml:space="preserve">
+    <value>(Auto)</value>
+  </data>
+  <data name="Img_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolTip_FindIncl" xml:space="preserve">
+    <value>Extract matched lines from the result lines on the current tab (Shift + Enter)</value>
+  </data>
+  <data name="Text_Help" xml:space="preserve">
+    <value>* Search conditions
+ FOLDERS : The root folder(s) to find target files (separated by a pipe '|')
+ FILES   : The filename / wildcard pattern(s) (separated by spaces)
+ EXCLUDE : The filename / wildcard pattern(s) to exclude from search (separated by spaces)
+ TEXT    : The keyword text to find
+
+
+* Example
+ FOLDERS  [ C:\MyProject|D:\MyData ]
+ FILES    [ *.xml *.h *.cpp        ]
+ EXCLUDE  [ test.cpp               ]
+ TEXT     [ class                  ]
+
+ In this case,
+  1. For those files under C:\MyProject and D:\MyData,
+  2. whose filename extention is any one of "xml", "h", and "cpp",
+  3. and if the filename is not "test.cpp",
+  4. find the keyword "class"
+
+  
+* Recent search conditions
+ The recently used combinations of FOLDERS/FILES/EXCLUDE conditions are remembered.
+ They can be recalled by clicking "Recent" button and selecting any combination from the list.
+
+
+* Keyboard shortcuts
+ - Enter            : Start a new search with the current search conditions
+ - Shift+Enter      : Extract the lines from the current tab that match the new search conditions
+ - Ctrl +Enter      : Extract the lines from the current tab that don't match the new search conditions
+ - Shift+Ctrl+Enter : Search the keyword from the files listed on the current tab
+ - Esc              : Quit the current search process
+ - Ctrl +F4         : Close the current tab
+
+
+* Acknowledgments
+ This project uses the following projects / icons: thanks!
+ - Azuki Text Editor Engine 1.6.4 (http://osdn.jp/projects/azuki/)
+ - Fugue Icons (http://p.yusukekamiyamane.com/)
+ - Xtra Orange Icons by Simon Cook</value>
+  </data>
+  <data name="Img_ui_tab__minus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ui-tab--minus.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Img_information" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\information.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Menu_ExcludeSelection" xml:space="preserve">
+    <value>Extract result lines not matching selected text</value>
+  </data>
+  <data name="ToolTip_StartFind" xml:space="preserve">
+    <value>Find it! (Enter)</value>
+  </data>
+  <data name="Label_Column" xml:space="preserve">
+    <value>Column</value>
+  </data>
+  <data name="Label_Chars" xml:space="preserve">
+    <value>Chars</value>
+  </data>
+  <data name="Img_folder_horizontal_open" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\folder-horizontal-open.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Img_editor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blue-document--pencil.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Menu_OpenFolder" xml:space="preserve">
+    <value>Open containing folder</value>
+  </data>
+  <data name="Img_documents_stack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\documents-stack.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Menu_CloseAllTabs" xml:space="preserve">
+    <value>Close all tabs</value>
+  </data>
+  <data name="ToolTip_ExcludeFile" xml:space="preserve">
+    <value>Filenames / wild card patterns to exclude from search (separated by spaces)</value>
+  </data>
+  <data name="ToolTip_FindFound" xml:space="preserve">
+    <value>Find the text in the found files on the current tab (Shift + Ctrl +Enter)</value>
+  </data>
+  <data name="ToolTip_Recursive" xml:space="preserve">
+    <value>Recursive search into sub folders</value>
+  </data>
+  <data name="Label_FileName" xml:space="preserve">
+    <value>Filename</value>
+  </data>
+  <data name="ToolTip_File" xml:space="preserve">
+    <value>Filenames / wild card patterns to search for (separated by spaces)</value>
+  </data>
+  <data name="Label_Lines" xml:space="preserve">
+    <value>Lines</value>
+  </data>
+  <data name="Title_Application" xml:space="preserve">
+    <value>Surf Find</value>
+  </data>
+  <data name="Img_drive_download" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\drive-download.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mesg_TextNotFound" xml:space="preserve">
+    <value>The text was not found</value>
+  </data>
+  <data name="ToolTip_Files" xml:space="preserve">
+    <value>Total numbers of matched files / searched files</value>
+  </data>
+  <data name="Img_gear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gear.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolTip_Root" xml:space="preserve">
+    <value>The root folders to start a search (separated by a pipe '|')</value>
+  </data>
+  <data name="Img_keyboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\keyboard.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Img_database" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\database.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mesg_InvalidSettings" xml:space="preserve">
+    <value>Failed to load the following configuration file. Please rename or remove the configuration file. (The settings will be lost.)</value>
+  </data>
+</root>
