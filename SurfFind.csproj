@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{62833320-D7B2-4E52-8AFE-C07C01240441}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TabTextFinder</RootNamespace>
+    <AssemblyName>SurfFind</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\find-white.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>SurfFind.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Azuki">
+      <HintPath>Azuki\Azuki.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConfigForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigForm.Designer.cs">
+      <DependentUpon>ConfigForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finder\FileCache.cs" />
+    <Compile Include="Finder\FindDispatcher.cs" />
+    <Compile Include="Finder\FindQuery.cs" />
+    <Compile Include="Finder\FindQueryByFilter.cs" />
+    <Compile Include="Finder\FindQueryByPath.cs" />
+    <Compile Include="Finder\TextFindEngine.cs" />
+    <Compile Include="Finder\TextFinder.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="TabTextFinderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabTextFinderForm.Designer.cs">
+      <DependentUpon>TabTextFinderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIControl\FindListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIControl\FindTabControl.cs" />
+    <Compile Include="UIControl\FindTabPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIControl\FoundHighlighter.cs" />
+    <Compile Include="UIControl\HistoryTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIControl\TextComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Util\FormState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util\PInvokeAPI.cs" />
+    <Compile Include="Util\StringUtil.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TabTextFinderForm.resx">
+      <DependentUpon>TabTextFinderForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SurfFind.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\asterisk.png" />
+    <Content Include="Resources\blue-document--pencil.png" />
+    <Content Include="Resources\clipboard.png" />
+    <Content Include="Resources\clock.png" />
+    <Content Include="Resources\cross-button.png" />
+    <Content Include="Resources\database.png" />
+    <Content Include="Resources\document-search-result.png" />
+    <Content Include="Resources\documents-stack.png" />
+    <Content Include="Resources\drive-download.png" />
+    <Content Include="Resources\edit-lowercase.png" />
+    <Content Include="Resources\edit-rule.png" />
+    <Content Include="Resources\edit-shadow.png" />
+    <Content Include="Resources\edit.png" />
+    <Content Include="Resources\find-white.ico" />
+    <Content Include="Resources\Find.png" />
+    <Content Include="Resources\Find128.ico" />
+    <Content Include="Resources\folder--arrow.png" />
+    <Content Include="Resources\folder-horizontal-open.png" />
+    <Content Include="Resources\folders-stack.png" />
+    <Content Include="Resources\gear.png" />
+    <Content Include="Resources\information.png" />
+    <Content Include="Resources\keyboard.png" />
+    <Content Include="Resources\layout-split-vertical.png" />
+    <Content Include="Resources\layout-split.png" />
+    <Content Include="Resources\locale.png" />
+    <Content Include="Resources\magnifier.png" />
+    <Content Include="Resources\minus-white.png" />
+    <Content Include="Resources\plus-white.png" />
+    <Content Include="Resources\processor.png" />
+    <Content Include="Resources\script-attribute-r.png" />
+    <Content Include="Resources\spell-check.png" />
+    <Content Include="Resources\system-monitor.png" />
+    <Content Include="Resources\ui-tab--minus.png" />
+    <Content Include="Resources\wrench-screwdriver.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
